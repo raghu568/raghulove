@@ -1,7 +1,6 @@
 // example pipeline for java maven spring-boot app
 pipeline {
-  agent any 
-	
+  agent any 	
   //give a hoot—don't pollute!
   options {
     buildDiscarder(logRotator(daysToKeepStr: '5', artifactNumToKeepStr: '10'))
